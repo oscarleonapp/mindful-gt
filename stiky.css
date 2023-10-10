@@ -5,14 +5,14 @@ body {
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: #9deed7;
   padding: 30px;
   text-align: center;
 }
 
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #a09e9e;
 }
 
 #navbar a {
