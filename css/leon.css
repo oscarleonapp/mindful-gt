@@ -1,0 +1,630 @@
+/* ========= * FUENTE * ========= */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&display=swap");
+
+/* ========= * VARIABLES * ========= */
+:root {
+  --color-principal: #1c2028;
+  --color-fondo: #f5f5fa;
+  --color-fondo2: #f5f5f8;
+  --color-blanco: #ffffff;
+  --color-shadow: #fafafc;
+  --head-card: #f8f8fd;
+  --color-card: #fbfbfd;
+  --color-gris: #cee5cd;
+  --color-texto: #13161c;
+  --color-border: #eff1f6;
+  --color-cta: #07c373;
+  --color-peligro: #e74c3c;
+
+  /* Contenedores */
+  --ancho-contenedor: 1200px;
+  --box-shadow: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* ========= * CONFIGURACIÓN * ========= */
+html {
+  font-size: 62.5%;
+  font-family: "IBM Plex Sans";
+}
+
+.espacio {
+  color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-fondo2);
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 2rem;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--negro);
+}
+/* Probar funcion */
+a {
+  cursor: url(../img/cursor-icon.png), auto;
+}
+
+/* ========= * CONTENEDORES * ========= */
+.contenedor {
+  max-width: 90%;
+  width: var(--ancho-contenedor);
+  margin: 2rem auto;
+  overflow: auto;
+}
+
+.contenedor-ancho {
+  width: 100%;
+  padding: 0 0.4rem;
+  margin: 2rem auto;
+}
+
+/* ========= * GRID LAYOUT * ========= */
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Tamaño Grande - Computadoras y TV */
+.pc-col-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.pc-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pc-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pc-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pc-col-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.pc-col-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.pc-col-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.pc-col-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.pc-col-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.pc-col-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.pc-col-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.pc-col-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* Expandir columnas */
+.pc-span-1 {
+  grid-column: span 1;
+}
+
+.pc-span-2 {
+  grid-column: span 2;
+}
+
+.pc-span-3 {
+  grid-column: span 3;
+}
+
+.pc-span-4 {
+  grid-column: span 4;
+}
+
+.pc-span-5 {
+  grid-column: span 5;
+}
+
+.pc-span-6 {
+  grid-column: span 6;
+}
+
+.pc-span-7 {
+  grid-column: span 7;
+}
+
+.pc-span-8 {
+  grid-column: span 8;
+}
+
+.pc-span-9 {
+  grid-column: span 9;
+}
+
+.pc-span-10 {
+  grid-column: span 10;
+}
+
+.pc-span-11 {
+  grid-column: span 11;
+}
+
+.pc-span-12 {
+  grid-column: span 12;
+}
+
+/* Tamaño mediano - Tablets */
+@media screen and (max-width: 992px) {
+  .tablet-col-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tablet-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tablet-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tablet-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tablet-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .tablet-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .tablet-col-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .tablet-col-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .tablet-col-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .tablet-col-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .tablet-col-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .tablet-col-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  /* Expandir columnas */
+  .tablet-span-1 {
+    grid-column: span 1;
+  }
+
+  .tablet-span-2 {
+    grid-column: span 2;
+  }
+
+  .tablet-span-3 {
+    grid-column: span 3;
+  }
+
+  .tablet-span-4 {
+    grid-column: span 4;
+  }
+
+  .tablet-span-5 {
+    grid-column: span 5;
+  }
+
+  .tablet-span-6 {
+    grid-column: span 6;
+  }
+
+  .tablet-span-7 {
+    grid-column: span 7;
+  }
+
+  .tablet-span-8 {
+    grid-column: span 8;
+  }
+
+  .tablet-span-9 {
+    grid-column: span 9;
+  }
+
+  .tablet-span-10 {
+    grid-column: span 10;
+  }
+
+  .tablet-span-11 {
+    grid-column: span 11;
+  }
+
+  .tablet-span-12 {
+    grid-column: span 12;
+  }
+}
+
+/* Tamaño mediano - mobil */
+@media screen and (max-width: 576px) {
+  .mobil-col-1 {
+    grid-template-columns: repeat(1, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-7 {
+    grid-template-columns: repeat(7, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-8 {
+    grid-template-columns: repeat(8, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-9 {
+    grid-template-columns: repeat(9, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-10 {
+    grid-template-columns: repeat(10, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-11 {
+    grid-template-columns: repeat(11, 1fr);
+    min-width: 320px;
+  }
+
+  .mobil-col-12 {
+    grid-template-columns: repeat(12, 1fr);
+    min-width: 320px;
+  }
+
+  /* Expandir columnas */
+  .mobil-span-1 {
+    grid-column: span 1;
+  }
+
+  .mobil-span-2 {
+    grid-column: span 2;
+  }
+
+  .mobil-span-3 {
+    grid-column: span 3;
+  }
+
+  .mobil-span-4 {
+    grid-column: span 4;
+  }
+
+  .mobil-span-5 {
+    grid-column: span 5;
+  }
+
+  .mobil-span-6 {
+    grid-column: span 6;
+  }
+
+  .mobil-span-7 {
+    grid-column: span 7;
+  }
+
+  .mobil-span-8 {
+    grid-column: span 8;
+  }
+
+  .mobil-span-9 {
+    grid-column: span 9;
+  }
+
+  .mobil-span-10 {
+    grid-column: span 10;
+  }
+
+  .mobil-span-11 {
+    grid-column: span 11;
+  }
+
+  .mobil-span-12 {
+    grid-column: span 12;
+  }
+}
+
+/* ========= * COMPONENTES * ========= */
+
+/* CARD */
+.card {
+  padding: 4rem;
+  background-color: var(--color-blanco);
+  border-radius: 0.3rem;
+  /* box-shadow: 0px 0px 30px rgba(221, 221, 221, 0.3); */
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-border);
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+/*NAVBAR*/
+.nav {
+  background-color: var(--color-blanco);
+  display: flex;
+  flex-direction: wrap;
+  box-sizing: var(--box-shadow);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.nav a {
+  color: var(--color-texto);
+  text-decoration: none;
+  display: flex;
+  height: 4.5rem;
+  align-items: center;
+  text-align: center;
+  padding: 10px 15px;
+  transition: 0.3s ease all;
+  font-size: 1.5rem;
+}
+
+.nav a.activo,
+.nav a:hover {
+  /* background-color: var(--blanco); */
+  color: var(--color-cta);
+  font-weight: 700;
+}
+
+/* BOTONES */
+.button {
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-cta);
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color-texto);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 22px;
+  transition: 0.3s ease all;
+}
+
+.button:hover {
+  box-shadow: inset 400px 0 0 0 var(--color-cta);
+  color: var(--color-blanco);
+}
+
+/* Agregar otros colores de botones */
+/* .button.color {
+  background-color: bisque;
+}
+
+.button.color:hover {
+  background-color: #f2f2f2;
+} */
+
+/* ########### 
+FUENTES 
+###########*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+.display-1 {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.display-2 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.display-3 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+/* ########### FORMULARIOS ###########*/
+form * {
+  font-family: var(--fuente);
+}
+
+form .input {
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  transition: 0.3s ease all;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form .input:focus {
+  border: 1px solid var(--verde);
+  background-color: var(--blanco);
+  color: var(--negro);
+  outline: none;
+}
+
+/* ########### * HELPERS * ###########*/
+.no-margen {
+  margin: 0;
+}
+
+.no-margen-superior {
+  margin-top: 0;
+}
+
+.no-margen-inferior {
+  margin-bottom: 0;
+}
+
+.no-margen-izquierdo {
+  margin-left: 0;
+}
+
+.no-margen-derecho {
+  margin-right: 0;
+}
+
+.margen-inferior {
+  margin-bottom: 20px;
+}
+
+.margen-superior {
+  margin-top: 20px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.texto-izquierda {
+  text-align: left;
+}
+
+.texto-derecha {
+  text-align: right;
+}
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
