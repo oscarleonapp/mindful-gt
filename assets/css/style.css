@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #5fcf80;
+  color: #48b0b3;
   text-decoration: none;
 }
 
 a:hover {
-  color: #86db9f;
+  color: #48b0b3;
   text-decoration: none;
 }
 
@@ -33,19 +33,261 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* Sale */
+.NavOffer {
+  font-family: arial;
+  text-align: center;
+  padding: 10px 0;
+  background: #66faff;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.NavOffer a {
+  text-decoration: none !important;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  max-width: 1000px;
+  text-align: left;
+  padding: 0 2%;
+}
+.NavOffer a h2 {
+  font: 2em/2em "GibsonRegular", Arial, Helvetica, sans-serif;
+  color: #222;
+  width: 100%;
+  display: inline-block;
+  margin: 0.1em 0;
+}
+.NavOffer a h2 span.Text1 {
+  text-transform: uppercase;
+  font: 1em/1em "GibsonSemiBold", Arial, Helvetica, sans-serif;
+  vertical-align: top;
+  display: block;
+  text-align: center;
+}
+.NavOffer a h2 sup {
+  font: 1em/1em "GibsonRegular", Arial, Helvetica, sans-serif;
+  vertical-align: top;
+  display: inline-block;
+}
+.NavOffer a h3 {
+  font: 2em/2em "GibsonRegular", Arial, Helvetica, sans-serif;
+  color: #222;
+  vertical-align: top;
+  width: 100%;
+  margin: 0.1em 0;
+  text-align: center;
+}
+
+.NavOffer a h3 span.Text2 {
+  display: inline-block;
+  font: 1em/1em "GibsonRegular", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.3em 10px;
+  background: #222;
+  vertical-align: top;
+}
+.NavOffer a h3 span.Text2 strong {
+  font: bold 1em/1em "GibsonSemiBold", Arial, Helvetica, sans-serif;
+}
+.NavOffer a h3 span.Text3 {
+  font: 0.65em/1em "GibsonSemiBold", Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+.NavOffer a h3 span.Text3 strong {
+  font: 1.5em/1em "GibsonSemiBold", Arial, Helvetica, sans-serif;
+}
+.NavOffer a h3 span.Text4 {
+  font: 0.5em/1em "GibsonRegular", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #222;
+  color: #222;
+  padding: 1em;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  background: #fff;
+}
+.NavOffer a p {
+  font: 0.7em/1em "GibsonRegular", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  padding: 0;
+  display: block;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-bottom: 5px;
+}
+/*-----------------------------
+DESKTOP STYLES
+-------------------------------*/
+@media only screen and (min-width: 768px) {
+  /*Anything Above 768px*/
+  .TextAlign {
+    text-align: left;
+  }
+  .NavOffer a h3 span.Text1 {
+    line-height: 1.5em;
+  }
+  .NavOffer {
+    max-width: 1300px;
+    padding: 16px 0 0 0;
+  }
+  .NavOffer a {
+    text-align: center;
+  }
+  .NavOffer a h2 {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    margin: 0.25em 0.5em 0 0;
+  }
+  .NavOffer a h3 {
+    width: auto;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+  }
+  .NavOffer a p {
+    width: auto;
+  }
+  .NavOffer a h2 sup {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /*Anything Above 1000px*/
+  .TextAlign {
+    text-align: left;
+  }
+  .NavOffer a h3 span.Text1 {
+    line-height: 1.5em;
+  }
+  .NavOffer a {
+    margin-left: 5%;
+  }
+  .NavOffer {
+    max-width: 1300px;
+    padding: 16px 0 0 0;
+  }
+  .NavOffer a h2 {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    margin: 0.25em 0.5em 0 0;
+  }
+  .NavOffer a h3 {
+    width: auto;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    max-height: 50px;
+  }
+  .NavOffer a p {
+    width: auto;
+    text-align: left;
+  }
+  .NavOffer a h2 sup {
+    display: inline-block;
+  }
+  .NavOffer a p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  /*Anything Above 1000px*/
+  .NavOffer a {
+    text-align: left;
+    margin: 0 13%;
+  }
+  .NavOffer a h3 span.Text2 {
+    padding: 10px 1em;
+  }
+}
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover,
+.hvr-fade:focus,
+.hvr-fade:active {
+  background-color: #222 !important;
+  color: white !important;
+}
+/*-----------------------------
+MOBILE FONT SIZE TRICK
+-------------------------------*/
+.NavOffer {
+  font-size: 100% !important;
+}
+
+@media only screen and (max-width: 736px) {
+  /*iPhone 6 Plus Landscape*/
+  .NavOffer {
+    font-size: 120% !important;
+  }
+}
+@media only screen and (max-width: 667px) {
+  /*iPhone 6 Landscape*/
+  .NavOffer {
+    font-size: 100% !important;
+  }
+}
+@media only screen and (max-width: 568px) {
+  /*iPhone 5 Plus Landscape*/
+  .NavOffer {
+    font-size: 90% !important;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /*iPhone 6 Plus Portrait*/
+  .NavOffer {
+    font-size: 85% !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  /*iPhone 6 Portrait*/
+  .NavOffer {
+    font-size: 70% !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /*iPhone 5 Portrait*/
+  .NavOffer {
+    font-size: 65% !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  visibility: hidden;
+  visibility: visible;
   opacity: 0;
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5fcf80;
-  width: 40px;
-  height: 40px;
+  background: #48b0b3;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   transition: all 0.4s;
 }
@@ -85,7 +327,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #5fcf80;
+  border: 6px solid #48b0b3;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -117,6 +359,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  /* margin-top: 50px; */
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
@@ -136,7 +379,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 #header .logo img {
@@ -148,7 +391,8 @@ h6 {
 */
 .get-started-btn {
   margin-left: 22px;
-  background: #5fcf80;
+  margin-right: 22px;
+  background: #48b0b3;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -161,6 +405,18 @@ h6 {
 .get-started-btn:hover {
   background: #3ac162;
   color: #fff;
+}
+
+.social-buttons {
+  margin-left: 6px;
+  background: #48b0b3;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 5px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
@@ -217,7 +473,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .navbar .dropdown ul {
@@ -254,7 +510,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .navbar .dropdown:hover > ul {
@@ -354,7 +610,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .navbar-mobile .getstarted,
@@ -389,7 +645,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -457,8 +713,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #5fcf80;
-  border: 2px solid #5fcf80;
+  background: #48b0b3;
+  border: 2px solid #48b0b3;
 }
 
 @media (min-width: 1024px) {
@@ -533,7 +789,7 @@ section {
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #5fcf80;
+  background: #48b0b3;
   padding: 30px 0;
   color: #fff;
 }
@@ -574,11 +830,11 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .about .content .learn-more-btn {
-  background: #5fcf80;
+  background: #48b0b3;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px 9px 25px;
@@ -610,7 +866,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #5fcf80;
+  color: #48b0b3;
   font-weight: 700;
 }
 
@@ -628,7 +884,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 30px;
-  background: #5fcf80;
+  background: #48b0b3;
   border-radius: 4px;
   color: #fff;
 }
@@ -657,7 +913,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #5fcf80;
+  color: #48b0b3;
   background: #fff;
 }
 
@@ -672,7 +928,7 @@ section {
 .why-us .icon-boxes .icon-box i {
   font-size: 32px;
   padding: 18px;
-  color: #5fcf80;
+  color: #48b0b3;
   margin-bottom: 30px;
   background: #ecf9f0;
   border-radius: 50px;
@@ -724,11 +980,11 @@ section {
 }
 
 .features .icon-box:hover {
-  border-color: #5fcf80;
+  border-color: #48b0b3;
 }
 
 .features .icon-box:hover h3 a {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 /*--------------------------------------------------------------
@@ -754,7 +1010,7 @@ section {
 }
 
 .courses .course-content h3 a:hover {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .courses .course-content p {
@@ -764,7 +1020,7 @@ section {
 
 .courses .course-content h4 {
   font-size: 14px;
-  background: #5fcf80;
+  background: #48b0b3;
   padding: 7px 14px;
   color: #fff;
   margin: 0;
@@ -846,7 +1102,7 @@ section {
 }
 
 .trainers .member .social a:hover {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .trainers .member .social i {
@@ -931,11 +1187,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5fcf80;
+  border: 1px solid #48b0b3;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5fcf80;
+  background-color: #48b0b3;
 }
 
 @media (max-width: 767px) {
@@ -987,7 +1243,7 @@ section {
   display: block;
   width: 60px;
   height: 1px;
-  background: #5fcf80;
+  background: #48b0b3;
   bottom: 0;
   left: 0;
 }
@@ -1038,12 +1294,12 @@ section {
 }
 
 .cource-details-tabs .nav-link:hover {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .cource-details-tabs .nav-link.active {
-  color: #5fcf80;
-  border-color: #5fcf80;
+  color: #48b0b3;
+  border-color: #48b0b3;
 }
 
 .cource-details-tabs .tab-pane.active {
@@ -1073,7 +1329,7 @@ section {
 
   .cource-details-tabs .nav-link.active {
     color: #fff;
-    background: #5fcf80;
+    background: #48b0b3;
   }
 }
 
@@ -1134,7 +1390,7 @@ section {
 }
 
 .events .read-more a:hover {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 .events .card:hover img {
@@ -1142,11 +1398,11 @@ section {
 }
 
 .events .card:hover .card-body {
-  border-color: #5fcf80;
+  border-color: #48b0b3;
 }
 
 .events .card:hover .card-body .card-title a {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 /*--------------------------------------------------------------
@@ -1174,7 +1430,7 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #5fcf80;
+  color: #48b0b3;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1206,7 +1462,7 @@ section {
 }
 
 .pricing ul i {
-  color: #5fcf80;
+  color: #48b0b3;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1224,7 +1480,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #5fcf80;
+  background: #48b0b3;
   display: inline-block;
   padding: 8px 35px;
   border-radius: 50px;
@@ -1243,7 +1499,7 @@ section {
 
 .pricing .featured h3 {
   color: #fff;
-  background: #5fcf80;
+  background: #48b0b3;
 }
 
 .pricing .advanced {
@@ -1255,7 +1511,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #5fcf80;
+  background: #48b0b3;
   color: #fff;
 }
 
@@ -1273,7 +1529,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #5fcf80;
+  color: #48b0b3;
   float: left;
   width: 44px;
   height: 44px;
@@ -1308,7 +1564,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #5fcf80;
+  background: #48b0b3;
   color: #fff;
 }
 
@@ -1371,7 +1627,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #5fcf80;
+  border-color: #48b0b3;
 }
 
 .contact .php-email-form input {
@@ -1383,7 +1639,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #5fcf80;
+  background: #48b0b3;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1459,7 +1715,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #5fcf80;
+  color: #48b0b3;
   font-size: 18px;
   line-height: 1;
 }
@@ -1483,7 +1739,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 #footer .footer-newsletter {
@@ -1523,7 +1779,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #5fcf80;
+  background: #48b0b3;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1545,13 +1801,13 @@ section {
 }
 
 #footer .credits a:hover {
-  color: #5fcf80;
+  color: #48b0b3;
 }
 
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #5fcf80;
+  background: #48b0b3;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
