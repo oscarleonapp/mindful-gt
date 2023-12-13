@@ -44,6 +44,40 @@
   /**
    * Back to top button
    */
+
+  let backtotopfacebook = select(".back-to-top-facebook");
+  if (backtotopfacebook) {
+    const toggleBacktotopfacebook = () => {
+      if (window.scrollY >= 0) {
+        backtotopfacebook.classList.add("active");
+      }
+    };
+    window.addEventListener("load", toggleBacktotopfacebook);
+    onscroll(document, toggleBacktotopfacebook);
+  }
+
+  let backtotopinstagram = select(".back-to-top-instagram");
+  if (backtotopinstagram) {
+    const toggleBacktotopinstagram = () => {
+      if (window.scrollY >= 0) {
+        backtotopinstagram.classList.add("active");
+      }
+    };
+    window.addEventListener("load", toggleBacktotopinstagram);
+    onscroll(document, toggleBacktotopinstagram);
+  }
+
+  let backtotopTwitter = select(".back-to-top-twitter");
+  if (backtotopTwitter) {
+    const toggleBacktotopTwitter = () => {
+      if (window.scrollY >= 0) {
+        backtotopTwitter.classList.add("active");
+      }
+    };
+    window.addEventListener("load", toggleBacktotopTwitter);
+    onscroll(document, toggleBacktotopTwitter);
+  }
+
   let backtotop = select(".back-to-top");
   if (backtotop) {
     const toggleBacktotop = () => {
